@@ -1,6 +1,8 @@
 //NEERAJ-(AI&ML)020
-using System;
+//Create a program to show the usage of static constructor
 
+
+using System;
 namespace StaticConstructorDemo
 {
     class MyClass
