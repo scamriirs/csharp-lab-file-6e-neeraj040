@@ -1,4 +1,5 @@
 //NEERAJ-(AI&ML)020
+//create a object of class having private constructor . Show it with the help of program how we can access the fields &method of that class 
 using System;
 
 namespace PrivateConstructorDemo
