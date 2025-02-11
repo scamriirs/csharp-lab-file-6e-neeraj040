@@ -1,0 +1,32 @@
+//Write a program to find the square of a number using 
+//-pass by value 
+//- pass by reference 
+using System;
+
+class Program
+{
+    // Pass by value
+    static int SquareByValue(int num)
+    {
+        return num * num;
+    }
+
+    // Pass by reference
+    static void SquareByReference(ref int num)
+    {
+        num *= num;
+    }
+
+    static void Main()
+    {
+        int number = 5;
+
+
+        int result = SquareByValue(number);
+        Console.WriteLine($"Square using pass by value: {result}");
+        Console.WriteLine($"Original number after pass by value: {number}");
+
+        SquareByReference(ref number);
+        Console.WriteLine($"Square using pass by reference: {number}");
+    }
+}
