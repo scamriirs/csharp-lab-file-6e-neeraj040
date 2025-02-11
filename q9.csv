@@ -1,0 +1,21 @@
+//Write a program to find the integer and fractional part of a number using out keyword 
+using System;
+
+class Program
+{
+    static void SplitNumber(double num, out int integerPart, out double fractionalPart)
+    {
+        integerPart = (int)num; // Integer part
+        fractionalPart = num - integerPart; // Fractional part
+    }
+
+    static void Main()
+    {
+        double number = 5.67;
+        SplitNumber(number, out int intPart, out double fracPart);
+
+        Console.WriteLine($"Number: {number}");
+        Console.WriteLine($"Integer Part: {intPart}");
+        Console.WriteLine($"Fractional Part: {fracPart}");
+    }
+}
