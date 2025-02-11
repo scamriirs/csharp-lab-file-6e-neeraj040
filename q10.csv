@@ -1,0 +1,24 @@
+// Write a program to find the smallest element in an array 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 5, 3, 8, 1, 9 };
+        int smallest = FindSmallest(numbers);
+
+        Console.WriteLine($"Smallest element: {smallest}");
+    }
+
+    static int FindSmallest(int[] arr)
+    {
+        int min = arr[0];
+        foreach (int num in arr)
+        {
+            if (num < min)
+                min = num;
+        }
+        return min;
+    }
+}
