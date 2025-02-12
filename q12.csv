@@ -1,0 +1,30 @@
+//Create a program to show the concept of method overloading 
+using System;
+
+class Program
+{
+    // Same method name, different parameter lists
+    void Display(string message)
+    {
+        Console.WriteLine("String message: " + message);
+    }
+
+    void Display(int number)
+    {
+        Console.WriteLine("Integer number: " + number);
+    }
+
+    void Display(string message, int number)
+    {
+        Console.WriteLine("Message: " + message + ", Number: " + number);
+    }
+
+    static void Main(string[] args)
+    {
+        Program program = new Program();
+
+        program.Display("Neeraj"); // Calls Display(string)
+        program.Display(20);      // Calls Display(int)
+        program.Display("Age", 24); // Calls Display(string, int)
+    }
+}
